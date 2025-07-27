@@ -49,3 +49,8 @@ class Solution:
             current_row += 1 if going_down else -1
 
         return ''.join(rows)
+
+sol = Solution()
+print(sol.convert("PAYPALISHIRING", 3))  # Output: "PAHNAPLSIIGYIR"
+print(sol.convert("PAYPALISHIRING", 4))  # Output: "PINALSIGYAHRPI"
+print(sol.convert("A", 1))               # Output: "A"
