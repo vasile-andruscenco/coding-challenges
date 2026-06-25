@@ -1,6 +1,9 @@
 """
 https://leetcode.com/problems/can-place-flowers/
 
+Pattern:
+    Greedy
+
 Determines if `n` new flowers can be planted in the flowerbed without violating
 the no-adjacent-flowers rule.
 

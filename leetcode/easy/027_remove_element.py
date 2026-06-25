@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 
+Pattern:
+    Two Pointers
+    Fast & Slow Pointers
+
 Removes all occurrences of `val` from the list `nums` in-place and returns the number of remaining elements.
 
 The first `k` elements of the array `nums` will be modified to contain the elements not equal to `val`,

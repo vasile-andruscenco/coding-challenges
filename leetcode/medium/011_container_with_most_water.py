@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/container-with-most-water/
 
+Pattern:
+    Two Pointers
+    Opposite Pointers
+
 Finds two vertical lines that together with the x-axis form a container
 capable of storing the maximum amount of water.
 

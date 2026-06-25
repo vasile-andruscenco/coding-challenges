@@ -1,6 +1,9 @@
 """
 https://leetcode.com/problems/search-insert-position/
 
+Pattern:
+    Binary Search
+
 Given a sorted list of distinct integers `nums` and a target integer `target`, returns the index
 if the target is found. If not, returns the index where it would be inserted to maintain the order.
 

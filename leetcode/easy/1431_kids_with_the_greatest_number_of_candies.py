@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 
+Pattern:
+    Array
+    Linear Scan
+
 Determines which kids can have the greatest number of candies if they receive all the extra candies.
 
 For each child in the list `candies`, checks if giving them `extraCandies` would result in a total

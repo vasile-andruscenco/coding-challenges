@@ -1,6 +1,9 @@
 """
 https://leetcode.com/problems/merge-strings-alternately/
 
+Pattern:
+    Two Pointers
+
 Merges two strings by alternating characters from each. Starts with the first character
 from `word1`, then the first from `word2`, and so on. If one string is longer,
 appends the remainder at the end.

@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/two-sum/description/
 
+Pattern:
+    Hash Map
+    Complement Lookup
+
     Given an array of integers `nums` and an integer `target`, return the indices of the two numbers
     such that they add up to `target`.
 

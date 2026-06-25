@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
+Pattern:
+    Two Pointers
+    Fast & Slow Pointers
+
 Removes duplicates from a sorted array `nums` in-place such that each unique element appears only once.
 The relative order of the elements is preserved. Returns the number of unique elements.
 

@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
 
+Pattern:
+    Two Pointers
+    Fast & Slow Pointers
+
 Removes duplicates from a sorted array in-place so that each unique element
 appears at most twice. The relative order of the elements is preserved.
 
@@ -46,3 +50,13 @@ class Solution:
                 index += 1
 
         return index
+
+
+solution = Solution()
+
+nums = [0, 0, 1, 1, 1, 1, 2, 3, 3]
+
+k = solution.removeDuplicates(nums)
+
+print("Number of valid elements:", k)
+print("Array after removal:", nums[:k])  # Output: [0, 0, 1, 1, 2, 3, 3]

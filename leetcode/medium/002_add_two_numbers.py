@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/add-two-numbers/description/
 
+Pattern:
+    Linked List
+    Elementary Math (Carry)
+
 Adds two non-negative integers represented as reversed linked lists and returns the sum
 as a new reversed linked list.
 

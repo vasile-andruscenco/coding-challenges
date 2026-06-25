@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/merge-sorted-array/
 
+Pattern:
+    Two Pointers
+    Backward Two Pointers (In-place Merge)
+
 Merges two sorted integer arrays into a single sorted array in-place.
 
 The first `m` elements of `nums1` contain valid values, while the remaining
@@ -72,3 +76,15 @@ class Solution:
             nums1[k] = nums2[j]
             j -= 1
             k -= 1
+
+
+solution = Solution()
+
+nums1 = [1, 2, 3, 0, 0, 0]
+m = 3
+nums2 = [2, 5, 6]
+n = 3
+
+solution.merge(nums1, m, nums2, n)
+
+print("Merged array:", nums1)  # Output: [1, 2, 2, 3, 5, 6]
