@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 
+Pattern:
+    Sliding Window
+    Variable-size Window
+
 Finds the length of the longest substring without repeating characters.
 
 A substring is a contiguous sequence of characters within a string.

@@ -1,6 +1,9 @@
 """
 https://leetcode.com/problems/zigzag-conversion/
 
+Pattern:
+    Simulation
+
 Converts a given string into a zigzag pattern across a specified number of rows,
 then reads the characters row by row to produce the final converted string.
 

@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/greatest-common-divisor-of-strings/
 
+Pattern:
+    Math
+    Euclidean Algorithm (GCD)
+
 Given two strings `str1` and `str2`, returns the largest string `x` such that
 both `str1` and `str2` are a concatenation of `x` one or more times.
 

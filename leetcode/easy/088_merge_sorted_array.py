@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/merge-sorted-array/
 
+Pattern:
+    Two Pointers
+    Backward Two Pointers (In-place Merge)
+
 Merges two sorted integer arrays into a single sorted array in-place.
 
 The first `m` elements of `nums1` contain valid values, while the remaining

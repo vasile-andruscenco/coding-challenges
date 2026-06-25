@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/longest-palindromic-substring/
 
+Pattern:
+    Two Pointers
+    Expand Around Center
+
 Finds the longest palindromic substring in the given string.
 
 A palindrome is a string that reads the same forward and backward.

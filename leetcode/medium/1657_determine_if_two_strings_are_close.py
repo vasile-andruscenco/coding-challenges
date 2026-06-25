@@ -1,6 +1,10 @@
 """
 https://leetcode.com/problems/determine-if-two-strings-are-close/
 
+Pattern:
+    Hash Map
+    Frequency Counting
+
 Determines if two strings are "close" based on allowed operations:
 1. Swap any two characters.
 2. Transform all occurrences of one existing character into another (and vice versa).
