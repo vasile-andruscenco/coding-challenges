@@ -45,7 +45,7 @@ class Solution:
             diff = target - num
             if diff in result:
                 return [result[diff], i]
-            result[num] =  i
+            result[num] = i
 
 solution = Solution()
 

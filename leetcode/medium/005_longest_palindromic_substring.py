@@ -28,11 +28,11 @@ Examples:
 """
 
 class Solution:
-    def longestPalindrome(self, s):
+    def longestPalindrome(self, s: str) -> str:
         if len(s) <= 1:
             return s
 
-        def expand_from_center(left, right):
+        def expand_from_center(left: int, right: int) -> str:
             while left >= 0 and right < len(s) and s[left] == s[right]:
                 left -= 1
                 right += 1

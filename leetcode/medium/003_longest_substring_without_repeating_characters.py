@@ -25,7 +25,7 @@ Examples:
 """
 
 class Solution:
-    def lengthOfLongestSubstring(self, s):
+    def lengthOfLongestSubstring(self, s: str) -> int:
         seen = set()
         left = 0
         max_length = 0
