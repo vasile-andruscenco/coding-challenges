@@ -7,12 +7,14 @@ speed: it turns an `O(n)` linear scan for "have I seen this?" into an average `O
 lookup. A great many problems that look quadratic become linear simply by
 remembering what you have already encountered.
 
-This document covers three closely related uses:
+This document covers four closely related uses:
 
 - **Lookup** — record values you have seen so you can test membership instantly.
 - **Frequency counting** — map each value to how often it appears.
 - **Complement lookup** — for pair problems, store values and look for the *missing
   partner* in one pass.
+- **Duplicate Detection with Sets** — track seen values within a constrained context
+  (a row, column, box, window, or group) to catch a repeat the moment it occurs.
 
 ---
 
@@ -37,6 +39,11 @@ time. The three uses are variations on what you store as the **value**:
 - **Complement lookup:** while scanning, for each element compute the partner you
   *would need* (`target - num`) and check whether you have already stored it. If yes,
   you found the pair in a single pass; if no, store the current element and move on.
+- **Duplicate detection with sets:** keep a `set` of values already seen within each
+  constrained context and report a violation the instant an insert would collide. When
+  several constraints apply at once (a grid cell belongs to a row, a column, *and* a
+  box), encode the context in a composite key — e.g. `(value, "row", r)` — so one set
+  covers them all.
 
 The complement trick is the key insight: instead of searching the *rest* of the array
 for a match (the `O(n²)` instinct), you ask the map whether the match has *already
@@ -77,6 +84,20 @@ for x in items:
 return False
 ```
 
+### Duplicate detection with sets (constrained context)
+
+```text
+seen = set()                    # composite keys keep contexts separate
+for r, c, value in filled_cells:
+    keys = ((value, "row", r),
+            (value, "col", c),
+            (value, "box", r // 3, c // 3))
+    if any(k in seen for k in keys):
+        return False            # value repeats within some context
+    seen.update(keys)
+return True
+```
+
 ---
 
 ## Complexity
@@ -113,6 +134,9 @@ Space is `O(k)` where `k` is the number of distinct keys stored.
 - [1657 — Determine if Two Strings Are Close](../leetcode/medium/1657_determine_if_two_strings_are_close.py)
   — frequency counting plus set comparison: the strings are "close" iff they share the
   same character set and the same multiset of frequencies.
+- [036 — Valid Sudoku](../leetcode/medium/036_valid_sudoku.py) — duplicate detection
+  with sets across three constrained contexts at once: a digit is invalid if it
+  repeats within its row, its column, or its 3 x 3 box, tracked via composite keys.
 
 ---
 

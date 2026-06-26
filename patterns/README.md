@@ -18,13 +18,14 @@ The rule that keeps everything maintainable:
 |---------|----------------|
 | [Two Pointers](two_pointers.md) | Linear scans with two indices: pair search in sorted data, in-place rewriting, in-place merging, expanding around a center, interleaving two sequences. |
 | [Binary Search](binary_search.md) | Logarithmic search over a sorted range *or* over a monotonic answer space. |
-| [Hash Map](hash_map.md) | O(1) lookup, frequency counting, and complement search. |
+| [Hash Map](hash_map.md) | O(1) lookup, frequency counting, complement search, and duplicate detection. |
 | [Sliding Window](sliding_window.md) | Optimal contiguous subarray / substring under a constraint. |
 | [Array](array.md) | Foundational linear scans with a precomputed global aggregate. |
 | [Greedy](greedy.md) | Locally optimal choices that build a global optimum in one pass. |
 | [Math](math.md) | Number-theoretic insight: GCD / Euclidean algorithm, formulas, modular arithmetic. |
 | [Linked List](linked_list.md) | Pointer rewiring and dummy-head traversal over node chains. |
 | [Simulation](simulation.md) | Directly reproducing a described process step by step. |
+| [Matrix Traversal](matrix_traversal.md) | Visiting 2-D grid cells in order, with row/column/sub-region index arithmetic. |
 
 ---
 
