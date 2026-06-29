@@ -74,6 +74,11 @@ return candidate                   # verify with a second pass if majority is no
   candidate whenever the running count hits zero, then increment on a match and
   decrement otherwise. The guaranteed strict majority means the final candidate is the
   answer with no verification pass needed.
+- [229 — Majority Element II](../leetcode/medium/229_majority_element_ii.py) — the
+  `> n // 3` generalisation: at most two values can qualify, so track two
+  (candidate, count) pairs and decrement *both* when an element matches neither. Here no
+  majority is guaranteed, so a second pass must verify each surviving candidate actually
+  exceeds `n // 3` before it is returned.
 
 ## References
 
