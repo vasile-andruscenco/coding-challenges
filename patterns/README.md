@@ -21,6 +21,7 @@ The rule that keeps everything maintainable:
 | [Hash Map](hash_map.md) | O(1) lookup, frequency counting, complement search, and duplicate detection. |
 | [Sliding Window](sliding_window.md) | Optimal contiguous subarray / substring under a constraint. |
 | [Array](array.md) | Foundational linear scans with a precomputed global aggregate. |
+| [Boyer-Moore Voting](boyer_moore_voting.md) | Strict-majority element in `O(n)` time and `O(1)` space via candidate/count cancellation. |
 | [Greedy](greedy.md) | Locally optimal choices that build a global optimum in one pass. |
 | [Math](math.md) | Number-theoretic insight: GCD / Euclidean algorithm, formulas, modular arithmetic. |
 | [Linked List](linked_list.md) | Pointer rewiring and dummy-head traversal over node chains. |
