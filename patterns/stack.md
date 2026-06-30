@@ -62,6 +62,9 @@ return stack is empty        # nothing left unresolved
 - [20 — Valid Parentheses](../leetcode/easy/020_valid_parentheses.py) — push every
   opening bracket; on a closing bracket, fail fast if the stack is empty or its top is
   not the matching opener. A string is valid only if the stack is empty at the end.
+- [71 — Simplify Path](../leetcode/medium/071_simplify_path.py) — split on '/' and
+  treat the stack as the directory chain: skip empty parts and '.', pop on '..' (the
+  parent), and push any real name. Joining what remains yields the canonical path.
 
 ## References
 
