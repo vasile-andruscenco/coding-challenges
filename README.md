@@ -108,6 +108,7 @@ recalling individual solutions:
 | Hash Map | [`patterns/hash_map.md`](patterns/hash_map.md) | Two Sum, Determine if Two Strings Are Close |
 | Sliding Window | [`patterns/sliding_window.md`](patterns/sliding_window.md) | Longest Substring Without Repeating Characters |
 | Boyer-Moore Voting | [`patterns/boyer_moore_voting.md`](patterns/boyer_moore_voting.md) | Majority Element, Majority Element II |
+| Stack | [`patterns/stack.md`](patterns/stack.md) | Valid Parentheses |
 
 See [`patterns/README.md`](patterns/README.md) for the full index and the
 maintenance contract that keeps patterns and solutions in sync.

@@ -27,6 +27,7 @@ The rule that keeps everything maintainable:
 | [Linked List](linked_list.md) | Pointer rewiring and dummy-head traversal over node chains. |
 | [Simulation](simulation.md) | Directly reproducing a described process step by step. |
 | [Matrix Traversal](matrix_traversal.md) | Visiting 2-D grid cells in order, with row/column/sub-region index arithmetic. |
+| [Stack](stack.md) | LIFO matching of nested structure: the next input resolves the most recent unfinished item. |
 
 ---
 
